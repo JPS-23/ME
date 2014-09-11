@@ -18,3 +18,8 @@ body{
 	border: 3px solid yellow;
 	background-color: dimgray;
 }
+.greydout:hover{
+  	-webkit-opacity: 0.25;
+  	-moz-opacity: 0.25;
+  	opacity: 0.25;
+ }
