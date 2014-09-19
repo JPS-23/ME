@@ -5,6 +5,8 @@ body{
 }
 .about-me h1{
 	text-align: center;
+	text-decoration: underline;
+	text-decoration: overline;
 }
 .my-name h1{
 	text-align: center;
@@ -17,32 +19,21 @@ body{
   	-moz-opacity: 0.25;
   	opacity: 0.25;
  }
-.hamburger-menu
-{
-    width:30px;
-    height:5px;
-    background-color:white;
-    border-radius:5px;
-    position:absolute;
+ .box-shadow-menu {
+  position: relative;
+  padding-left: 1.25em;
 }
-.hamburger-menu:after, .hamburger-menu:before
-{
-    content: '';
-    width: 100%;
-    height:5px;
-    background-color:white;
-    position:absolute;
-    border-radius:5px;
-}
-
-.hamburger-menu:after
-{
-    top:10px;
-}
-
-.hamburger-menu:before
-{
-    top:20px;
+.box-shadow-menu:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.25em;
+  width: 1em;
+  height: 0.15em;
+  background: black;
+  box-shadow: 
+    0 0.25em 0 0 black,
+    0 0.5em 0 0 black;
 }
 #container{
 	width: 960px;
@@ -58,7 +49,7 @@ body{
 	width: 260px;
 	float: left;
 	background: orange;
-	background-position: left;
+	background-position: bottom;
 }
 @media screen and (max-width:959px) {
 	#container{
