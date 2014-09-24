@@ -35,30 +35,28 @@ body{
     0 0.25em 0 0 white,
     0 0.5em 0 0 white;
 }
-#container{
-	width: 960px;
-	margin: 0px auto;
+/* Tablet Landscape */
+@media screen and (max-width: 1060px) {
+    #primary { width:67%; }
+    #secondary { width:30%; margin-left:3%;}  
 }
-#left-column{
-	width: 700px;
-	float: left;
-	background: blue;
-	background-position: right;
+/* Tabled Portrait */
+@media screen and (max-width: 768px) {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:0; border:none; }
 }
-#right-column{
-	width: 260px;
-	float: left;
-	background: orange;
-	background-position: bottom;
-}
-@media screen and (max-width:959px) {
-	#container{
-		width:100%;
-	}
-	#left-column{
-		width:70%;
-	}
-	#right-column{
-		width:30%;
+@media (min-device-width:600px){
+	img[data-src-600px] {
+		content: attr(data-src-600px
+			, url);
 	}
 }
+
+@media (min-device-width:800px) {
+	img[data-src-800px] {
+		content: attr(data-src-800px
+			, url);
+	}
+}
+
+img { max-width: 100%; }
